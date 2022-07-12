@@ -44,6 +44,16 @@ main {
 .instructions p {
   padding-top: 1rem;
 }
+.time-score {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 0.5rem;
+  margin: 2rem 0;
+  text-align: right;
+}
+.time-score .score {
+  flex: 0 0 60px;
+}
 .die-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -90,14 +100,14 @@ main {
 .attribution {
   color: var(--die-bg);
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .attribution a {
   color: var(--die-hold-bg);
 }
 @media (min-width: 30rem) {
   main {
-    padding: 3rem;
+    padding: 1rem 3rem;
   }
   .die-container {
     gap: 1rem;
