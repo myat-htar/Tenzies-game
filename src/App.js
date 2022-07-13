@@ -61,7 +61,7 @@ function App() {
   function handleClick(id) {
     setDice(prevDice => {
       return prevDice.map(die =>
-        die.id == id ? { ...die, isHold: !die.isHold } : die
+        die.id === id ? { ...die, isHold: !die.isHold } : die
       );
     });
   }
@@ -159,10 +159,7 @@ function App() {
       </main>
       <footer className="attribution">
         <p>
-          Coded by{" "}
-          <a href="https://github.com/myat-htar" target="_blank">
-            Myat Htar
-          </a>
+          Coded by <a href="https://github.com/myat-htar">Myat Htar</a>
         </p>
       </footer>
     </>
